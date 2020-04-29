@@ -1,6 +1,7 @@
 body {
   color: #fdfefe;
   font-family: "Neucha", cursive;
+  margin: 0;
 }
 
 header {
@@ -45,7 +46,9 @@ header ul {
   width: 30%;
 }
 
-
+header ul li {
+  /*  padding-right: 95px; */
+}
 
 header ul li a {
   text-decoration: none;
