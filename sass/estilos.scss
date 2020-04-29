@@ -20,6 +20,7 @@ header {
   top: 0px;
   width: 100%;
   z-index: 5;
+  
 
   #navbar{
     width: inherit;
@@ -34,7 +35,7 @@ header {
     justify-content: space-between;
     list-style: none;
     
-    padding:0 8% 0 0;
+    padding:0 6% 0 0;
     margin:0;
     width: 30%;
     
@@ -44,15 +45,16 @@ header {
 
       a {
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: bold;
         color: $contentColor;
-        font-family: $font;
+        letter-spacing: 1px;
+        font-family: 'Raleway', sans-serif;
 
         &:hover{
             color: #E74C3C;
             text-decoration: underline;
-            font-size: 1.53rem;
+            font-size: 1.29rem;
         }
                 
       }
@@ -201,12 +203,13 @@ h1{
   .project-name{
     margin-top: 10px;
     color: rgba($color: #000000, $alpha: 1);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 3% 0 0 0;
     background-color: rgba($color:#CCD1D1, $alpha: 0.5);
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     height: 15%;
+    font-family: 'Raleway', sans-serif;;
     
   }
   

@@ -42,7 +42,7 @@ header ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-  padding: 0 8% 0 0;
+  padding: 0 6% 0 0;
   margin: 0;
   width: 30%;
 }
@@ -53,16 +53,17 @@ header ul li {
 
 header ul li a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #fdfefe;
-  font-family: "Neucha", cursive;
+  letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
 }
 
 header ul li a:hover {
   color: #E74C3C;
   text-decoration: underline;
-  font-size: 1.53rem;
+  font-size: 1.29rem;
 }
 
 @media screen and (max-width: 425px) {
@@ -213,12 +214,13 @@ h1 {
 .project-wrap .project-name {
   margin-top: 10px;
   color: black;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 3% 0 0 0;
   background-color: rgba(204, 209, 209, 0.5);
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   height: 15%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .img {
