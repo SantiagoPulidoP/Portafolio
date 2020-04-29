@@ -46,7 +46,9 @@ header ul {
   width: 30%;
 }
 
-
+header ul li {
+  /*  padding-right: 95px; */
+}
 
 header ul li a {
   text-decoration: none;
@@ -91,6 +93,10 @@ header ul li a:hover {
   header .acciones {
     display: block;
     margin: 0;
+  }
+  header li {
+    width: 100vw;
+    border: 1px solid white;
   }
 }
 
