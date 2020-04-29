@@ -131,7 +131,8 @@ h1 {
 }
 
 .my-projects {
-  min-width: 80vw;
+  width: 100vw;
+  max-width: 1000px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,39 +141,76 @@ h1 {
       flex-wrap: wrap;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 50px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 80px auto;
   margin-bottom: 0;
 }
 
 .project-wrap {
-  border: 3px solid gray;
-  width: 35%;
-  min-width: 00px;
-  min-height: 350px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 400px;
   margin-bottom: 90px;
   border-radius: 10px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.project-wrap:hover .img {
+  opacity: 0.6;
+}
+
+.project-wrap:hover .project-name {
+  font-weight: bold;
+}
+
+.project-wrap .project-name {
+  margin-top: 10px;
+  color: black;
+  font-size: 1.7rem;
+  padding: 3% 0 0 0;
+  background-color: rgba(204, 209, 209, 0.5);
+  text-decoration: none;
+  letter-spacing: 2px;
+  height: 15%;
+}
+
+.img {
+  border-radius: 8px;
+  height: 95%;
 }
 
 .tributePage {
   background-image: url("../images/tribute.png");
-  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .surveyForm {
   background-image: url("../images/survey.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .landingPage {
   background-image: url("../images/landingpage.png");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .documentationPage {
   background-image: url("../images/documentation.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ensayo {
