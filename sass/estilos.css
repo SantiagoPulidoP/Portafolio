@@ -19,6 +19,7 @@ header {
   top: 0px;
   width: 100%;
   z-index: 5;
+  /* Desarrollo mediaqueries para el header */
 }
 
 header #navbar {
@@ -45,9 +46,7 @@ header ul {
   width: 30%;
 }
 
-header ul li {
-  /*  padding-right: 95px; */
-}
+
 
 header ul li a {
   text-decoration: none;
@@ -61,6 +60,38 @@ header ul li a:hover {
   color: #E74C3C;
   text-decoration: underline;
   font-size: 1.53rem;
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    /* HEADER */
+    background-color: red;
+    display: block;
+    height: 30vh;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  header #navbar {
+    width: inherit;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .acciones {
+    display: block;
+    margin: 0;
+  }
 }
 
 #welcome-section {

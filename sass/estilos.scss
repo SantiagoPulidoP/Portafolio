@@ -57,6 +57,39 @@ header {
       }
     }
   }
+
+  /* Desarrollo mediaqueries para el header */
+  
+  @media screen and (max-width: 425px)
+  {
+    /* HEADER */
+    background-color: red;
+    display: block;
+    height: 30vh;
+    font-size: 0.8rem;
+    text-align: center;
+
+
+    #navbar{
+      width: inherit;
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .acciones{
+      display: block;
+      margin: 0;
+    }
+
+  }
+
+
+
+
+
 }
 
 
