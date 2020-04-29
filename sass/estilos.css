@@ -1,0 +1,228 @@
+body {
+  color: #fdfefe;
+  font-family: "Neucha", cursive;
+}
+
+header {
+  background-color: #181727;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+header ul li {
+  padding-right: 95px;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fdfefe;
+  font-family: "Neucha", cursive;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-image: url("../images/backgroundnoise.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#welcome-section h1,
+#welcome-section .profession {
+  margin: 0;
+  font-family: "Neucha", cursive;
+  height: auto;
+  letter-spacing: 5px;
+}
+
+h1 {
+  position: absolute;
+  top: 28%;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.profession {
+  position: absolute;
+  top: 40%;
+  font-size: 1.5rem;
+}
+
+.welcome-img {
+  position: absolute;
+  top: 52%;
+  width: 28%;
+  height: 45%;
+}
+
+@media screen and (max-heigth: 300px) {
+  .welcome-img {
+    height: 25%;
+    width: 20%;
+  }
+}
+
+#projects {
+  background-image: url("../images/noiseprojects.png");
+  width: auto;
+  height: auto;
+  border-top: 15px solid  #181727;
+  text-align: center;
+}
+
+#projects .subtitle {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+#projects .my-projects a:hover {
+  position: relative;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .my-projects a:hover h3 {
+  visibility: visible;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.my-projects {
+  width: 80vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+
+.project-wrap {
+  border: 3px solid gray;
+  width: 45%;
+  min-height: 400px;
+  margin-bottom: 90px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+.tributePage {
+  background-image: url("../images/tribute.png");
+  min-height: 400px;
+}
+
+.tributePage h3 {
+  visibility: hidden;
+}
+
+.surveyForm {
+  background-image: url("../images/survey.png");
+}
+
+.landingPage {
+  background-image: url("../images/landingpage.png");
+  background-position: center;
+}
+
+.documentationPage {
+  background-image: url("../images/documentation.png");
+}
+
+.ensayo {
+  width: inherit;
+  height: inherit;
+}
+
+#contact {
+  background-image: url("../images/backgroundnoise.png");
+  margin: 0;
+  height: 700px;
+  border-top: 15px solid  #181727;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8%;
+}
+
+.contactMe, .frase {
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+.contactMe {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.frase {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 1%;
+}
+
+footer {
+  background-color: #181727;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+footer h5 {
+  margin: 0;
+}
+/*# sourceMappingURL=estilos.css.map */
