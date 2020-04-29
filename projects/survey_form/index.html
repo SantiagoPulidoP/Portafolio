@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+
+        <div class="wrapper">
+            <h1 id="title">Welcome to MaxSurvey</h1>
+            <p id="description">Better decitions, better living</p>
+
+        </div>
+
+        <form  id="survey-form">
+
+            <div class="nea">
+                
+                <label for="name" id="name-label">Nombre:</label>
+                <input type="text" id=name name="user_name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="nea">
+                
+                <label for="email" id="email-label" >Email: </label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+     
+            </div>
+
+            <div class="nea">
+
+                <label for="number" id="label-number">Age:</label>
+                <input type="number" min="10" max="99" id="number" placeholder="Age" required>
+
+            </div>
+
+            <!-- Barra desplegable  -->
+            <div class="div_select">
+                <p>Are you a...?</p>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value> Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time job</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="prenerNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+        <!-- Radio buttons -->
+
+        <div class="div_radio">
+            <p>Would you recommend us?</p>
+            <label>
+                <input  value = "maybe" class="input_radio" type="radio" name="would_recomend" >Maybe
+            </label>
+
+            <label>
+                <input value="Definitely" class="input_radio" type="radio" name="yes" >Definitely
+            </label>
+
+            <label>
+                <input value="not_sure" class="input_radio" type="radio" name="not" >Not Sure
+            </label>
+
+        </div>
+
+
+            <!-- Checklist -->
+            <div class="div_check">
+                <p>You have particpated at:</p>
+                <label >
+                    <input type="checkbox" value="font-end">
+                     Front-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" value="back-end">
+                     Back-end projects
+                </label>
+                <label >
+                    <input type="checkbox" value="Data_visualization">
+                     Data visualization
+                </label>
+                <label >
+                    <input type="checkbox" value="Challenges">
+                     Challegenges
+                </label>
+                <label >
+                    <input type="checkbox" value="Ml">
+                     Machine Learning
+                </label>
+                <label >
+                    <input type="checkbox" value="Ds">
+                     Data Science
+                </label>
+            </div>
+
+            <!-- Textarea -->
+
+            <div class="div_text_area">
+                <p>Leave us a coment, we want to enhance your experience</p>
+                <textarea name="coments" id="text-area" placeholder="Enter your comment here"></textarea>
+            </div>
+
+            <!-- Boton de envio -->
+
+            <div class="div_submit">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+
+
+
+        </form>
+    </main>
+     
+</body>
+</html>
