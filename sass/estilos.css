@@ -58,6 +58,12 @@ header ul li a {
   font-family: "Neucha", cursive;
 }
 
+@media screen and (max-width: 425px) {
+  header ul li a {
+    font-size: 1.2rem;
+  }
+}
+
 header ul li a:hover {
   color: #E74C3C;
   text-decoration: underline;
@@ -67,15 +73,15 @@ header ul li a:hover {
 @media screen and (max-width: 425px) {
   header {
     /* HEADER */
-    background-color: red;
     display: block;
-    height: 30vh;
+    height: 28vh;
     font-size: 0.8rem;
     text-align: center;
+    padding-top: 10px;
   }
   header #navbar {
     width: inherit;
-    height: inherit;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,17 +92,20 @@ header ul li a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   header .acciones {
     display: block;
     margin: 0;
+    padding: 0;
   }
   header li {
     width: 100vw;
-    border: 1px solid white;
+    height: 16px;
+    border-bottom: 1px solid white;
+    display: block;
+  }
+  header .work, header .contact, header .about {
+    padding: 10px 0;
   }
 }
 
