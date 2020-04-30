@@ -50,6 +50,7 @@ header {
 
         @media screen and (max-width:425px){
           font-size: 1.2rem;
+          
         }
           
         
@@ -58,6 +59,10 @@ header {
             color: #E74C3C;
             text-decoration: underline;
             font-size: 1.53rem;
+            @media screen and (max-width: 425px) {
+              font-size: 1.4rem;
+              
+            }
         }
                 
       }
@@ -74,7 +79,7 @@ header {
     height: 28vh;
     font-size: 0.8rem;
     text-align: center;
-    padding-top: 10px;
+    
    
 
     #navbar{
@@ -136,9 +141,10 @@ header {
     margin: 0;
     font-family: $font;
     height: auto;
-    letter-spacing: 5px;
+    
     
   }
+  
 }
 
 h1{
@@ -146,7 +152,14 @@ h1{
   top: 23%;
   font-size: 2.4rem;
   font-weight: normal;  
+  letter-spacing: 5px;
+  @media screen and (max-width: 425px) {
+    top:33%;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
    
+    
+  }
 
   
 }
@@ -154,6 +167,13 @@ h1{
   position: absolute;
   top: 33%;
   font-size: 1.5rem;
+  letter-spacing: 5px;
+  @media screen and (max-width: 425px){
+    letter-spacing: 2px;
+    top:42%;
+    font-size: 1.3rem;
+    
+  }
 }
 
 .welcome-img{
@@ -161,10 +181,12 @@ h1{
   top: 45%;
   width: 28%;
   height: 45%;
-  @media screen and (max-heigth: 300px){
-    height: 25%;
-    width: 20%;
+  @media screen and (max-width: 425px){
+    top:54%;
+    height: 33%;
+    width: 25%;
   }
+  
 
 }
 
@@ -173,14 +195,18 @@ h1{
   background-image: url("../images/noiseprojects.png");
   width: auto;
   height: auto;
-  border-top: 15px solid  #181727;
+  border-top: 10px solid  #181727;
   text-align: center;
 
   .subtitle{
     font-size: 2rem;
     letter-spacing: 5px;
     margin-bottom: 0;
-    
+    @media screen and (max-width:425px){
+      letter-spacing: 2px;
+      font-size: 1.6rem;
+      margin: 35px 0 35px 0;
+    }
   }
 
  }
@@ -195,6 +221,11 @@ h1{
   justify-content: space-between;
   margin: 80px auto;
   margin-bottom: 0;
+
+  @media screen and (max-width:425px){
+    margin: 0 auto;
+    max-width: 300px;
+  }
   
   
 }
@@ -209,6 +240,12 @@ h1{
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  @media screen and (max-width:425px){
+    min-height: 350px;
+    width: 90%;
+    margin: 0 auto 35px auto;
+  }
 
   &:hover{
     .img{
@@ -229,6 +266,15 @@ h1{
     text-decoration: none;
     letter-spacing: 2px;
     height: 15%;
+
+    @media screen and (max-width: 425px){
+      margin-top: 4px;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      height: auto;
+      padding: 2% 0 0 0;
+    }
+
     
   }
   
@@ -283,23 +329,37 @@ h1{
   flex-direction: column;
   align-items: center;
   padding-top: 8%;
+  @media  screen and (max-width: 425px){
+    border-top: 10px solid #181727;
+    height: auto;
+  }
 }
 
 
 .contactMe, .frase{
   margin: 0;
   letter-spacing: 5px;
+  @media screen and (max-width: 425px){
+    letter-spacing: 1px;
+  }
 }
 
 .contactMe{
   font-size: 2.5rem;
   font-weight: normal;  
+  @media screen and (max-width: 425px){
+    font-size: 1.8rem;
+  }
 }
 
 .frase{
   font-size: 1.5rem;
   font-weight: normal;  
   margin-top: 1%;
+  @media screen and (max-width: 425px){
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
 }
 
 .redes{
@@ -309,6 +369,14 @@ h1{
   height: 15%;
   margin-top: 10%;
 
+  @media screen and (max-width:425px){
+    margin-top: 10%;
+    width: auto;
+    margin-bottom: 10%;
+    
+
+  }
+
   a {
    
     height: 100%; 
@@ -316,7 +384,12 @@ h1{
     &:hover{
     height: 110%;
     width: 32px;
+
     }
+
+    @media screen and (max-width:425px){
+      height: 70%;
+      }
 
     img{
       height: 80%;
@@ -339,10 +412,20 @@ footer{
   color: white;
 
 
+
   h5{
     margin: 0;
     letter-spacing: 3px;
     font-size: 1rem;
+  }
+
+  @media screen and (max-width:425px){
+    height: auto;
+    h5{
+      letter-spacing: 1px;
+      margin: 10px 0;
+      font-size: 0.8rem;
+    }
   }
 }
 

@@ -71,13 +71,18 @@ header ul li a:hover {
 }
 
 @media screen and (max-width: 425px) {
+  header ul li a:hover {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
   header {
     /* HEADER */
     display: block;
     height: 28vh;
     font-size: 0.8rem;
     text-align: center;
-    padding-top: 10px;
   }
   header #navbar {
     width: inherit;
@@ -132,7 +137,6 @@ header ul li a:hover {
   margin: 0;
   font-family: "Neucha", cursive;
   height: auto;
-  letter-spacing: 5px;
 }
 
 h1 {
@@ -140,12 +144,30 @@ h1 {
   top: 23%;
   font-size: 2.4rem;
   font-weight: normal;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    top: 33%;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+  }
 }
 
 .profession {
   position: absolute;
   top: 33%;
   font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 425px) {
+  .profession {
+    letter-spacing: 2px;
+    top: 42%;
+    font-size: 1.3rem;
+  }
 }
 
 .welcome-img {
@@ -155,10 +177,11 @@ h1 {
   height: 45%;
 }
 
-@media screen and (max-heigth: 300px) {
+@media screen and (max-width: 425px) {
   .welcome-img {
-    height: 25%;
-    width: 20%;
+    top: 54%;
+    height: 33%;
+    width: 25%;
   }
 }
 
@@ -166,7 +189,7 @@ h1 {
   background-image: url("../images/noiseprojects.png");
   width: auto;
   height: auto;
-  border-top: 15px solid  #181727;
+  border-top: 10px solid  #181727;
   text-align: center;
 }
 
@@ -174,6 +197,14 @@ h1 {
   font-size: 2rem;
   letter-spacing: 5px;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 425px) {
+  #projects .subtitle {
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    margin: 35px 0 35px 0;
+  }
 }
 
 .my-projects {
@@ -194,6 +225,13 @@ h1 {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 425px) {
+  .my-projects {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+}
+
 .project-wrap {
   width: 100%;
   max-width: 450px;
@@ -208,6 +246,14 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+}
+
+@media screen and (max-width: 425px) {
+  .project-wrap {
+    min-height: 350px;
+    width: 90%;
+    margin: 0 auto 35px auto;
+  }
 }
 
 .project-wrap:hover .img {
@@ -227,6 +273,16 @@ h1 {
   text-decoration: none;
   letter-spacing: 2px;
   height: 15%;
+}
+
+@media screen and (max-width: 425px) {
+  .project-wrap .project-name {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    height: auto;
+    padding: 2% 0 0 0;
+  }
 }
 
 .img {
@@ -282,9 +338,22 @@ h1 {
   padding-top: 8%;
 }
 
+@media screen and (max-width: 425px) {
+  #contact {
+    border-top: 10px solid #181727;
+    height: auto;
+  }
+}
+
 .contactMe, .frase {
   margin: 0;
   letter-spacing: 5px;
+}
+
+@media screen and (max-width: 425px) {
+  .contactMe, .frase {
+    letter-spacing: 1px;
+  }
 }
 
 .contactMe {
@@ -292,10 +361,23 @@ h1 {
   font-weight: normal;
 }
 
+@media screen and (max-width: 425px) {
+  .contactMe {
+    font-size: 1.8rem;
+  }
+}
+
 .frase {
   font-size: 1.5rem;
   font-weight: normal;
   margin-top: 1%;
+}
+
+@media screen and (max-width: 425px) {
+  .frase {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
 }
 
 .redes {
@@ -310,6 +392,14 @@ h1 {
   margin-top: 10%;
 }
 
+@media screen and (max-width: 425px) {
+  .redes {
+    margin-top: 10%;
+    width: auto;
+    margin-bottom: 10%;
+  }
+}
+
 .redes a {
   height: 100%;
   padding: 0 20px;
@@ -318,6 +408,12 @@ h1 {
 .redes a:hover {
   height: 110%;
   width: 32px;
+}
+
+@media screen and (max-width: 425px) {
+  .redes a {
+    height: 70%;
+  }
 }
 
 .redes a img {
@@ -346,5 +442,16 @@ footer h5 {
   margin: 0;
   letter-spacing: 3px;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+  footer {
+    height: auto;
+  }
+  footer h5 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
